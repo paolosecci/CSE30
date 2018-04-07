@@ -1,0 +1,72 @@
+//sortArr
+int sortArr(bool isIncreasing, int array[], int arrSize)
+{
+    
+    //selection sort ascending
+    if (boolean is true)
+    {
+        //sort
+        int minSpot;
+        for i <— 0; i < arrSize - 1; i++
+        {
+            minSpot <— i;
+            for j = i+1; j < arrSize; j++
+            {
+                if (array[j] < array[minSpot])
+                {
+                    minSpot <— j;
+                }
+                
+            }
+            if (minSpot is not i)
+            {
+                switch location of (array[i], array[minSpot]);
+            }
+        }
+        
+        //output resulting array
+        print << "This is the sorted array in ascending order: " << endl;
+        for i = 0; i < arrSize; i++
+        {
+            print << array[i] + "\t";
+        }
+        
+        //return 1 for ascending
+        return 1;
+    }
+    
+    //selection sort descending
+    else
+    {
+        //sort
+        int maxSpot;
+        for i <— 0; i < arrSize - 1; i++
+        {
+            maxSpot <— i;
+            for j <— i+1; j < arrSize; j++
+            {
+                if (array[j] > array[maxSpot])
+                {
+                    maxSpot <— j;
+                }
+            
+            }
+            if (maxSpot is not i)
+            {
+                switch location of (array[i], array[maxSpot]);
+            }
+        }
+    
+        //output resulting array
+        print << "This is the sorted array in descending order: " << endl;
+        for i = 0; i < arrSize; i++
+        {
+            print << array[i] + "\t";
+        }
+        
+        //return 0 for descending
+        return 0;
+    }
+    
+}//end sortArr
+

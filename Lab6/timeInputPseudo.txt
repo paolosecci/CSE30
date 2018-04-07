@@ -1,0 +1,22 @@
+Pseudo getTimeFrom User
+
+bool getTimeFromUser(Time &inTime)
+{
+    declare string input;
+    getline(cin, input);
+    
+    inTime.hour = atoi(input.substr(from 0-1).c_str());
+    inTime.min = atoi(input.substr(from 3-4).c_str());
+    inTime.sec = atoi(input.substr(from 6-7).c_str());
+    
+    //check if logical time
+    if (inTime.hour > 24 ‘or’ inTime.min > 60 ‘or’ inTime.sec > 60)
+    {
+        print —> "The time entered is invalid";
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}

@@ -1,0 +1,43 @@
+//declare combineStr before main
+string combineStr(string str, int times);
+
+int main()
+{
+	//declare str and int inputs
+	string inputStr;
+	int inputInt;
+
+	//get string input
+	print << "Enter string: " << endl;
+	cin —> inputStr;
+
+	//get int input
+	print << "Enter number of times" << endl;
+	cin —> inputInt;
+
+	//check if inputInt is 0
+	if inputInt is 0
+	{
+		return 0;
+	}	
+
+	//run + print combineStr
+    	print << "The resulting string is: " << go to next line
+	print << combineStr(inputStr, inputInt);
+	
+}
+
+//initialize combineStr
+string combineStr(string str, int times)
+{
+    //declare a returnString
+    string returnString;
+    
+	for i = 0; i < times; i++
+	{
+		returnString = (returnString + str);
+	}
+
+	return returnString;
+}
+
