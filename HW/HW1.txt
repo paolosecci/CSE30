@@ -90,6 +90,3 @@ bool isValidDay(int month, int day, int year)
 5a. value
 5b. reference
 5c. value
-5d.
-5e. 
-
